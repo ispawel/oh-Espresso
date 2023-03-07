@@ -1,0 +1,21 @@
+//
+//  PreparationVC.swift
+//  oh!Espresso
+//
+//  Created by Pavel Isakov on 07.03.2023.
+//
+
+import UIKit
+
+class PreparationVC: UIViewController, Coordinating {
+    var coordinator: Coordinator?
+    
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        title = "Preparation"
+        view.backgroundColor = .darkGray
+    }
+    
+        
+}
