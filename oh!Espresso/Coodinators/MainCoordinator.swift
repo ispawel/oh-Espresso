@@ -23,7 +23,7 @@ class MainCoordinator: Coordinator {
     }
     
     func start() {
-        var vc: UIViewController & Coordinating = HomeVC()
+        var vc: UIViewController & Coordinating = PreparationVC()
         vc.coordinator = self
         
         navigationController?.setViewControllers([vc], animated: false)

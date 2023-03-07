@@ -1,0 +1,6 @@
+framework module Pods_oh_Espresso {
+  umbrella header "Pods-oh!Espresso-umbrella.h"
+
+  export *
+  module * { export * }
+}

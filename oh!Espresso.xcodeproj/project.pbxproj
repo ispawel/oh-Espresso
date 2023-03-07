@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB858C6D0916398A0AFAF7CF /* Pods_oh_Espresso.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B37CBFACA78728D7AF776641 /* Pods_oh_Espresso.framework */; };
 		E21F9D8029B73A4F009A5336 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21F9D7F29B73A4F009A5336 /* AppDelegate.swift */; };
 		E21F9D8229B73A4F009A5336 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21F9D8129B73A4F009A5336 /* SceneDelegate.swift */; };
 		E21F9D8429B73A4F009A5336 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21F9D8329B73A4F009A5336 /* HomeVC.swift */; };
@@ -18,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		89F09CED445ED764BF893A15 /* Pods-oh!Espresso.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-oh!Espresso.debug.xcconfig"; path = "Target Support Files/Pods-oh!Espresso/Pods-oh!Espresso.debug.xcconfig"; sourceTree = "<group>"; };
+		B37CBFACA78728D7AF776641 /* Pods_oh_Espresso.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_oh_Espresso.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D379E78305AF1AE205420181 /* Pods-oh!Espresso.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-oh!Espresso.release.xcconfig"; path = "Target Support Files/Pods-oh!Espresso/Pods-oh!Espresso.release.xcconfig"; sourceTree = "<group>"; };
 		E21F9D7C29B73A4F009A5336 /* oh!Espresso.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "oh!Espresso.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E21F9D7F29B73A4F009A5336 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E21F9D8129B73A4F009A5336 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -35,17 +39,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB858C6D0916398A0AFAF7CF /* Pods_oh_Espresso.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		428ED705BBDE472486B899C5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B37CBFACA78728D7AF776641 /* Pods_oh_Espresso.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		52CBB7C6F806615F4B85AEA7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				89F09CED445ED764BF893A15 /* Pods-oh!Espresso.debug.xcconfig */,
+				D379E78305AF1AE205420181 /* Pods-oh!Espresso.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		E21F9D7329B73A4E009A5336 = {
 			isa = PBXGroup;
 			children = (
 				E21F9D7E29B73A4F009A5336 /* oh!Espresso */,
 				E21F9D7D29B73A4F009A5336 /* Products */,
+				52CBB7C6F806615F4B85AEA7 /* Pods */,
+				428ED705BBDE472486B899C5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,8 +107,8 @@
 		E21F9D9A29B74BDA009A5336 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				E21F9D9829B74BD3009A5336 /* PreparationVC.swift */,
 				E21F9D8329B73A4F009A5336 /* HomeVC.swift */,
+				E21F9D9829B74BD3009A5336 /* PreparationVC.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -104,9 +128,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E21F9D9029B73A51009A5336 /* Build configuration list for PBXNativeTarget "oh!Espresso" */;
 			buildPhases = (
+				894F0A4F968AE544314CD057 /* [CP] Check Pods Manifest.lock */,
 				E21F9D7829B73A4F009A5336 /* Sources */,
 				E21F9D7929B73A4F009A5336 /* Frameworks */,
 				E21F9D7A29B73A4F009A5336 /* Resources */,
+				125F106DCFF6BB5C96C4FFFE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -161,6 +187,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		125F106DCFF6BB5C96C4FFFE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-oh!Espresso/Pods-oh!Espresso-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-oh!Espresso/Pods-oh!Espresso-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-oh!Espresso/Pods-oh!Espresso-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		894F0A4F968AE544314CD057 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-oh!Espresso-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E21F9D7829B73A4F009A5336 /* Sources */ = {
@@ -306,6 +374,7 @@
 		};
 		E21F9D9129B73A51009A5336 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89F09CED445ED764BF893A15 /* Pods-oh!Espresso.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -338,6 +407,7 @@
 		};
 		E21F9D9229B73A51009A5336 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D379E78305AF1AE205420181 /* Pods-oh!Espresso.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
